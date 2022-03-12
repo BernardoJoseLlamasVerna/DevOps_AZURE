@@ -1,0 +1,10 @@
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=executor
+
+[haproxy]
+localhost
+
+[apache]
+20.224.132.14
+20.224.131.248
