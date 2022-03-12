@@ -4,3 +4,4 @@ ansible_user=ansible
 
 [workers]
 20.224.132.14
+20.224.131.248
