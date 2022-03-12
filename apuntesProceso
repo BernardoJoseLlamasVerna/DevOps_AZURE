@@ -1,0 +1,28 @@
+- hemos configurado los usuarios ansible en todos los nodos y hemos hecho ping desde el master a los dos workers con una receta de ansible (pantallazo y código del fichero inventory.yaml)
+
+- hemos seguido los pasos de https://github.com/jadebustos/devopslabs/blob/master/labs-k8s/00-00-instalando-kubernetes.md, hemos sincronizado las timezone de todas las máquinas, hemos creado en la máquina nfs un volumen compartido y lo hemos exportado para el master y los 2 workers....
+
+- hemos empezado a tener problemas al intentar ejecutar este comando
+showmount -e <ip_nfs> en el master y los hijos.
+
+- hemos borrado y desactivado el swap en el máster y los hijos.
+
+- hemos instalado CRI-O en el master y los 2 workers 
+
+- hemos instalado kubernetes en el master y los 2 workers (hemos instalado los 3 paquetes: kubelet kubeadm kubectl)
+
+- hemos configurado kubeadm en máster y los 2 workers.
+
+- hemos arrancado el cluster de kubernetes en el master (solo)
+
+- hemos exportado la variable KUBECONFIG=/etc/kubernetes/admin.conf en el master
+
+- hemos autorizado al usuario root para ejecutar el cluster de kubernetes. También lo hemos hecho para el usuario por defecto (userAdmin) copiando el fichero de configuración (/etc/kubernetes/admin.conf) en el repositorio local de ambos usuarios (.kube)
+
+- hemos instalado y configurado la sdn con azure
+
+- hemos instalado el ingress controller en el master (pantallazo 19:54)
+
+- hemos seguido los pasos hasta el kubeadm join donde hemos tenido problemas: el problema tiene que ver seguro con la red que no he sabido resolver, máscara de red, etc
+
+
